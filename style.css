@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Oswald:wght@300;400;500&family=Source+Sans+Pro:wght@200&display=swap');
+
+/*
+There wil be certain margin or all elements by default
+Remove margin padding and all.
+*/
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --clr-primary:#3EECAC;
+    --clr-secondary: #EE74E1;
+}
+
+body{
+    background-color: var(--clr-primary);
+    background-image: linear-gradient(19deg,
+      var(--clr-primary) 0%, 
+      var(--clr-secondary) 100%);
+     /*Game fixed to only one screen*/
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.title{
+    font-weight: 600;
+}
+.container{
+    width: 80%;
+    max-width: 30rem;
+    height: auto;
+    padding: 3rem 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.45);
+}
+
+.details{
+    color:rgb(202, 23, 151);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.details .title{
+text-align: center;
+font-size: 1.1rem;
+text-transform: uppercase;
+line-height: 1.5;
+}
+
+.details .scores{
+   
+    font-size: 1.25rem;
+}
+
+.details .scores span{
+    font-weight: 900; 
+}
+.weapons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.weapons button{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    background-color: var(--clr-secondary);
+    border-radius: 50%;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+.result{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+.result p{
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.result p:last-child{
+    color:rgb(202, 23, 151);
+}
+
+
+
