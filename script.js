@@ -22,7 +22,7 @@ const showResult = function(result)
 {
 
     document.getElementById(`user-choice`).textContent=`Your Choice: ${userChoice}`;   
-    document.getElementById(`comp-choice`).textContent=`System Selected: ${userChoice}`;   
+    document.getElementById(`comp-choice`).textContent=`System Selected: ${compChoice}`;   
     document.getElementById(`result`).textContent=`${result}`;   
    
     console.log(`Result : ${result}`);
