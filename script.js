@@ -88,8 +88,9 @@ const game=function(input){
         userScore++;
     }
     }
-    document.getElementById('user-score').textContent=compScore;
-    document.getElementById('comp-score').textContent=userScore;
+   
+    document.getElementById('user-score').textContent=userScore;
+    document.getElementById('comp-score').textContent=compScore;
 };
 //use random feature for comp to plays 
 
